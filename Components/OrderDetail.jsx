@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../styles/OrderDetail";
+import styles from "../styles/OrderDetail.module.css";
 
 const OrderDetail = ({ total, createOrder }) => {
   const [customer, setCustomer] = useState("");

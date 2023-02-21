@@ -13,7 +13,7 @@ import {
 import axios from "axios";
 import { useRouter } from "next/router";
 import { reset } from "../redux/cartSlice";
-import OrderDetail from "../components/OrderDetail";
+import OrderDetail from "../Components/OrderDetail";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);

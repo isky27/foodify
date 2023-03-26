@@ -29,7 +29,7 @@ const Index = ({ orders, products }) => {
         status: currentStatus + 1,
       });
       setOrderList([
-        res.data,
+       await res.data,
         ...orderList.filter((order) => order._id !== id),
       ]);
     } catch (err) {
@@ -134,8 +134,8 @@ export const getServerSideProps = async (ctx) => {
 
   return {
     props: {
-      orders: orderRes.data,
-      products: productRes.data,
+      orders: await orderRes.data,
+      products:await productRes.data,
     },
   };
 };

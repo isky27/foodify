@@ -35,7 +35,7 @@ const Add = ({ setClose }) => {
         data
       );
 
-      const { url } = uploadRes.data;
+      const { url } =await uploadRes.data;
       const newProduct = {
         title,
         desc,

@@ -14,7 +14,7 @@ import Image from 'next/image'
     const res=await axios.get("http://localhost:3000/api/products")
     return{
       props:{
-        pizzaList:res.data
+        pizzaList:await res.data
       }
     }
   }

@@ -131,7 +131,12 @@ const Cart = () => {
                     ))}
                   </span>
                 </td>
-               
+                <td>
+                  <span className={styles.price}>${product.price}</span>
+                </td>
+                <td>
+                  <span className={styles.quantity}>{product.quantity}</span>
+                </td>
                 <td>
                   <span className={styles.total}>
                     ${product.price * product.quantity}

@@ -113,12 +113,7 @@ const Cart = () => {
               <tr className={styles.tr} key={product._id}>
                 <td>
                   <div className={styles.imgContainer}>
-                    <Image
-                      src={product.img}
-                      layout="fill"
-                      objectFit="cover"
-                      alt=""
-                    />
+                   
                   </div>
                 </td>
                 <td>
